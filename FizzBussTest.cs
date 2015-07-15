@@ -33,6 +33,13 @@ namespace First_TDD_Demo.Test
 
             Assert.Equal("Buzz", answer);
         }
-    
+        [Fact]
+        public void NumberDivisibleByThreeAndFifteen()
+        {
+            var ourTest = new First_TDD_Demo.FizzBuzzLogic();
+            string answer = ourTest.DoTheThing(15);
+
+            Assert.Equal("FizzBuzz", answer);
+        }
     }
 }
