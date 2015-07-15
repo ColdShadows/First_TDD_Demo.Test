@@ -18,13 +18,21 @@ namespace First_TDD_Demo.Test
             Assert.Equal("1", answer);
         }
         [Fact]
-        public void NumberDividedByThree()
+        public void NumberDivisibleByThree()
         {
             var ourTest = new First_TDD_Demo.FizzBuzzLogic();
             string answer = ourTest.DoTheThing(3);
 
             Assert.Equal("Fizz", answer);
         }
-        
+        [Fact]
+        public void NumberDivisibleByFive()
+        {
+            var ourTest = new First_TDD_Demo.FizzBuzzLogic();
+            string answer = ourTest.DoTheThing(5);
+
+            Assert.Equal("Buzz", answer);
+        }
+    
     }
 }
